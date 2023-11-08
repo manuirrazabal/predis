@@ -73,6 +73,19 @@ class RPOP_Test extends PredisCommandTestCase
     /**
      * @group connected
      */
+    public function testPopsTheLastTwoElementFromList(): void
+    {
+        $redis = $this->getClient();
+
+        $redis->rpush('letters', 'a', 'b', 'c', 'd');
+
+        $this->assertSame(['d', 'c'], $redis->rpop('letters', 2));
+        $this->assertSame(['a', 'b'], $redis->lrange('letters', 0, -1));
+    }
+
+    /**
+     * @group connected
+     */
     public function testReturnsNullOnEmptyList(): void
     {
         $redis = $this->getClient();

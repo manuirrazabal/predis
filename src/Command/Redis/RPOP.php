@@ -26,4 +26,14 @@ class RPOP extends RedisCommand
     {
         return 'RPOP';
     }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function setArguments(array $arguments)
+    {
+        $arguments = self::normalizeVariadic($arguments);
+
+        parent::setArguments($arguments);
+    }
 }
