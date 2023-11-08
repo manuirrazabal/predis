@@ -216,7 +216,7 @@ use Predis\Response\Status;
  * @method int               lrem(string $key, int $count, string $value)
  * @method mixed             lset(string $key, int $index, string $value)
  * @method mixed             ltrim(string $key, int $start, int $stop)
- * @method string|null       rpop(string $key)
+ * @method string|null       rpop(string $key, int $value)
  * @method string|null       rpoplpush(string $source, string $destination)
  * @method int               rpush(string $key, array $values)
  * @method int               rpushx(string $key, array $values)
