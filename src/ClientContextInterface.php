@@ -207,7 +207,7 @@ use Predis\Command\Redis\Container\Search\FTCURSOR;
  * @method $this lrem($key, $count, $value)
  * @method $this lset($key, $index, $value)
  * @method $this ltrim($key, $start, $stop)
- * @method $this rpop($key, $value)
+ * @method $this rpop($key, $count)
  * @method $this rpoplpush($source, $destination)
  * @method $this rpush($key, array $values)
  * @method $this rpushx($key, array $values)

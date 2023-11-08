@@ -374,7 +374,7 @@ class PredisStrategyTest extends PredisTestCase
             'LINDEX' => 'keys-first',
             'LLEN' => 'keys-first',
             'LPOP' => 'keys-first',
-            'RPOP' => 'keys-first',
+            'RPOP' => 'keys-all',
             'RPOPLPUSH' => 'keys-all',
             'BLPOP' => 'keys-blockinglist',
             'BRPOP' => 'keys-blockinglist',

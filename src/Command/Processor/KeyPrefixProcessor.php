@@ -78,7 +78,7 @@ class KeyPrefixProcessor implements ProcessorInterface
             'LSET' => $prefixFirst,
             'LREM' => $prefixFirst,
             'LPOP' => $prefixFirst,
-            'RPOP' => $prefixFirst,
+            'RPOP' => $prefixAll,
             'RPOPLPUSH' => $prefixAll,
             'SADD' => $prefixFirst,
             'SREM' => $prefixFirst,

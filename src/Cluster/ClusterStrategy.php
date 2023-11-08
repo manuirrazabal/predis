@@ -85,7 +85,7 @@ abstract class ClusterStrategy implements StrategyInterface
             'LINDEX' => $getKeyFromFirstArgument,
             'LLEN' => $getKeyFromFirstArgument,
             'LPOP' => $getKeyFromFirstArgument,
-            'RPOP' => $getKeyFromFirstArgument,
+            'RPOP' => $getKeyFromAllArguments,
             'RPOPLPUSH' => $getKeyFromAllArguments,
             'BLPOP' => [$this, 'getKeyFromBlockingListCommands'],
             'BRPOP' => [$this, 'getKeyFromBlockingListCommands'],
